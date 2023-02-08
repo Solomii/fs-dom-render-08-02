@@ -48,7 +48,6 @@ function handleImgError(target) {
 }
 
 function handleImgLoad(target) {
-  
 }
 
 function stringToColour(str) {
