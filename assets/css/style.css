@@ -1,57 +1,86 @@
 :root {
     --size: 300px;
-}
+  }
 
-* {
+  * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-.container {
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .container {
     max-width: 1200px;
     min-width: 350px;
     width: 80%;
     margin: auto;
     text-align: center;
-}
-.cardsContainer {
+  }
+
+  .cardsContainer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     list-style: none;
-}
+  }
 
-img {
-    width: 100%;
-}
-
-.cardWrapper {
+  .cardWrapper {
+    display: flex;
+    align-items: flex-end;
     margin: 1em;
-}
+  }
 
-.card {
+  .card {
     border: 1px solid #ccc;
-    padding: 10px;
-}
-.cardImage {
-    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .cardImageWrapper {
     width: var(--size);
     height: var(--size);
+    position: relative;
+  }
+
+  .cardImage,
+  .initials {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .initials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    color:#fff;
+    font-size: 4em;
+  }
+
+  .cardImage {
     object-fit: cover;
     object-position: top;
-}
-.cardName {
-    font-size: 1.8em;
-    max-width: var(--size);
-}
-.cardDescription {
-    font-size: 0.8em;
-}
+  }
 
-.oneLine {
-  max-width: var(--size);
+  .cardName {
+    font-size: 1.8em;
+  }
+
+  .cardDescription {
+    font-size: 0.8em;
+  }
+  
+  .oneLine {
+    max-width: var(--size);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-
-}
+  }
