@@ -1,0 +1,57 @@
+:root {
+    --size: 300px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1200px;
+    min-width: 350px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.cardsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.cardWrapper {
+    margin: 1em;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.cardImage {
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    object-fit: cover;
+    object-position: top;
+}
+.cardName {
+    font-size: 1.8em;
+    max-width: var(--size);
+}
+.cardDescription {
+    font-size: 0.8em;
+}
+
+.oneLine {
+  max-width: var(--size);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
