@@ -34,6 +34,16 @@ function getFirstLettersFromName(str) {
 }
 // console.log(getFirstLettersFromName("Tom Name"))
 
+/**
+ *
+ * @param {string} tag
+ * @param {object} options
+ * @param {[string]} options.classNames[]
+ * @param {object} options.attributes {'src':path, 'alt':name}
+ * @param {object} options.styles
+ * @param {object} options.listeners
+ * @returns
+ */
 function createElement(
     tag = "div",
     { classNames, attributes, styles, listeners } = {},
