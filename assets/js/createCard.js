@@ -12,6 +12,7 @@ function createActorCard(actor) {
   divInitial.classList.add("initials");
   divInitial.append(actor.name[0]);
   divInitial.style.backgroundColor = stringToColour(actor.name);
+  divInitial.textContent = getFirstLettersFromName(actor.name);
 
   const img = document.createElement("img");
   img.classList.add("cardImage");

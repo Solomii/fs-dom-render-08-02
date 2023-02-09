@@ -22,6 +22,18 @@ function stringToColour(str) {
     return colour;
 }
 
+function getFirstLettersFromName(str) {
+ return  str.trim().split(' ').map( item => item.toUpperCase().substring(0, 1)).join(' ');
+//   const firstLetters = str
+//   .trim()
+//   .split(' ')
+//   .map(word => word.charAt(0))
+//   .join(' ')
+
+// return firstLetters;
+}
+// console.log(getFirstLettersFromName("Tom Name"))
+
 function createElement(
     tag = "div",
     { classNames, attributes, styles, listeners } = {},
